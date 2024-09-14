@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Detalles del Pedido</title>
+    </head>
+    <body>
+        <h1>Detalles del Pedido</h1>
+        { % if pedido %}
+        <p> ID del Pedido: {{ pedido [0]}}</p>
+        <p> Cliente: {{ pedido [1]}}</p>
+        <p> Producto: {{ pedido [0]}}</p>
+        <p> Precio: $ {{ pedido [0]}}</p>
+        {% else %}
+        <p> Pedido no encontrado</p>
+        {% endif %}
+    </body>
+    </html>
+    
+
